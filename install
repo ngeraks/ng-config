@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "Backup old"
+mv ~/.zshrc .zshrc_old
+mv ~/.bashrc .bashrc_old
+mv ~/.vimrc .vimrc_old
+mv ~/.tmux.conf .tmux.conf_old
