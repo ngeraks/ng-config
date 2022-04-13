@@ -1,6 +1,16 @@
 #!/bin/sh
+thisdir=$(pwd)
 echo "Backup old"
-mv ~/.zshrc .zshrc_old
-mv ~/.bashrc .bashrc_old
-mv ~/.vimrc .vimrc_old
-mv ~/.tmux.conf .tmux.conf_old
+mv ~/.zshrc ~/.zshrc_old
+#mv ~/.bashrc ~/.bashrc_old
+mv ~/.vimrc ~/.vimrc_old
+mv ~/.vim ~/.vim_old
+mv ~/.tmux.conf ~/.tmux.conf_old
+
+echo "Copy from config to home"
+cp $thisdir/zshrc ~/.zshrc
+#cp $thisdir/bashrc ~/.bashrc
+cp $thisdir/vimrc ~/.vimrc
+cp -r $thisdir/vim ~/.vim
+cp $thisdir/tmux.conf ~/.tmux.conf
+
