@@ -1,5 +1,7 @@
 #!/bin/sh
 thisdir=$(pwd)
+git clone https://github.com/ngeraks/ng-config.git
+
 echo "Backup old"
 mv ~/.zshrc ~/.zshrc_old
 #mv ~/.bashrc ~/.bashrc_old
