@@ -11,6 +11,7 @@ echo "Backup old"
 cprm ~/.zshrc
 cprm ~/.vimrc
 cprm ~/.vim
+cprm ~/.config/nvim/init.vim
 cprm ~/.tmux.conf
 
 
@@ -30,5 +31,6 @@ cp $thisdir/ng-config/vimrc ~/.vimrc
 mkdir -p ~/.vim/after/syntax
 cp $thisdir/ng-config/cpp.vim ~/.vim/after/syntax/cpp.vim
 cp $thisdir/ng-config/c.vim ~/.vim/after/syntax/c.vim
+cp $thisdir/ng-config/init.vim ~/.config/nvim/init.vim
 cp $thisdir/ng-config/tmux.conf ~/.tmux.conf
 cd $thisdir
