@@ -31,6 +31,7 @@ cp $thisdir/ng-config/vimrc ~/.vimrc
 mkdir -p ~/.vim/after/syntax
 cp $thisdir/ng-config/cpp.vim ~/.vim/after/syntax/cpp.vim
 cp $thisdir/ng-config/c.vim ~/.vim/after/syntax/c.vim
+mkdir -p ~/.config/nvim/
 cp $thisdir/ng-config/init.vim ~/.config/nvim/init.vim
 cp $thisdir/ng-config/tmux.conf ~/.tmux.conf
 cd $thisdir
