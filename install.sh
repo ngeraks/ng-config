@@ -17,7 +17,7 @@ echo "Copy from config to home"
 cp $thisdir/ng-config/zshrc ~/.zshrc
 #cp $thisdir/bashrc ~/.bashrc
 cp $thisdir/ng-config/vimrc ~/.vimrc
-mkdir ~/.vim/after/syntax
+mkdir -p ~/.vim/after/syntax
 cp $thisdir/ng-config/cpp.vim ~/.vim/after/syntax/cpp.vim
 cp $thisdir/ng-config/c.vim ~/.vim/after/syntax/c.vim
 cp $thisdir/ng-config/tmux.conf ~/.tmux.conf
