@@ -14,9 +14,9 @@ mv ~/.tmux.conf ~/.tmux.conf_old
 #sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" #TODO Check if zsh ohmyzsh
 
 echo "Copy from config to home"
-cp $thisdir/zshrc ~/.zshrc
+cp $thisdir/ng-config/zshrc ~/.zshrc
 #cp $thisdir/bashrc ~/.bashrc
-cp $thisdir/vimrc ~/.vimrc
-cp -r $thisdir/vim ~/.vim
-cp $thisdir/tmux.conf ~/.tmux.conf
-
+cp $thisdir/ng-config/vimrc ~/.vimrc
+cp -r $thisdir/ng-config/vim ~/.vim
+cp $thisdir/ng-config/tmux.conf ~/.tmux.conf
+cd $thisdir
