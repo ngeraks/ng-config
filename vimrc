@@ -19,7 +19,7 @@ hi VertSplit cterm=NONE ctermfg=Black ctermbg=NONE
 set fillchars+=vert:\ "
 
 hi StatusLineNC  cterm=NONE ctermfg=darkgrey ctermbg=NONE
-hi Search cterm=reverse,bold ctermbg=black
+hi Search cterm=bold ctermfg=white ctermbg=black
 hi Visual cterm=bold ctermbg=black
 
 "numbers and relative numbers
@@ -52,7 +52,7 @@ hi CursorLineNR cterm=bold ctermfg=white
 "ctermbg=black
 hi LineNr ctermfg=darkgrey
 "set list
-
+"asdfasdfasdfasfdasfdasdfasdfasdf
 hi Visual term=reverse cterm=reverse
 
 "Highlight cursor line underneath the cursor vertically.
