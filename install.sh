@@ -33,4 +33,4 @@ ln -s $thisdir/ng-config/c.vim ~/.vim/after/syntax/c.vim
 mkdir -p ~/.config/nvim/
 ln -s $thisdir/ng-config/init.vim ~/.config/nvim/init.vim
 ln -s $thisdir/ng-config/tmux.conf ~/.tmux.conf
-ln -s $thisdir
+cd $thisdir
