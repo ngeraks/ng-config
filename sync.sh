@@ -1,14 +1,16 @@
 #!/bin/bash
-push(){
-  echo push
-  git add .
-  git commit -m "$(whoami)@$(hostname) $(date)"
-  git push
-}
 pull(){
   echo pull
   git pull
   install.sh 1
+}
+
+push(){
+  echo push but first pull
+  git pull
+  git add .
+  git commit -m "$(whoami)@$(hostname) $(date)"
+  git push
 }
 
 local_change=$(git status --porcelain --untracked-files=no | wc -l)
