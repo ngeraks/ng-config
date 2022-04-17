@@ -8,6 +8,7 @@ push(){
 pull(){
   echo pull
   git pull
+  install.sh 1
 }
 
 local_change=$(git status --porcelain --untracked-files=no | wc -l)

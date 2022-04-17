@@ -1,6 +1,6 @@
 #!/bin/sh
 thisdir=$(pwd)
-git clone https://github.com/ngeraks/ng-config.git
+if [ $1 -lt 1 ]; then git clone https://github.com/ngeraks/ng-config.git; fi
 cd ng-config
 
 cprm(){
