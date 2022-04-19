@@ -90,10 +90,10 @@ plugins=(
 #bindkey '^H' insert-cycledleft
 #bindkey '^L' insert-cycledright
 # dirhistory
-bindkey '^H' dirhistory_zle_dirhistory_back
-bindkey '^L' dirhistory_zle_dirhistory_future 
-bindkey '^K' dirhistory_zle_dirhistory_up
-bindkey '^J' dirhistory_zle_dirhistory_down
+bindkey '^[H' dirhistory_zle_dirhistory_back
+bindkey '^[L' dirhistory_zle_dirhistory_future 
+bindkey '^[K' dirhistory_zle_dirhistory_up
+bindkey '^[J' dirhistory_zle_dirhistory_down
 
 #tmux
 ZSH_TMUX_AUTOSTART=true

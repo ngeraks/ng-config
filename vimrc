@@ -24,6 +24,25 @@ noremap <c-down> <c-w>-
 noremap <c-left> <c-w>>
 noremap <c-right> <c-w><
 
+
+function! TmuxMove(direction)
+        let wnr = winnr()
+        silent! execute 'wincmd ' . a:direction
+        " If the winnr is still the same after we moved, it is the last pane
+        if wnr == winnr()
+                call system('tmux select-pane -' . tr(a:direction, 'phjkl', 'lLDUR'))
+        end
+endfunction
+
+nnoremap <silent> <C-Left> :call TmuxMove('h')<cr>
+nnoremap <silent> <C-Down> :call TmuxMove('j')<cr>
+nnoremap <silent> <C-Up> :call TmuxMove('k')<cr>
+nnoremap <silent> <C-Right> :call TmuxMove('l')<cr>
+nnoremap <silent> <C-h> :call TmuxMove('h')<cr>
+nnoremap <silent> <C-j> :call TmuxMove('j')<cr>
+nnoremap <silent> <C-k> :call TmuxMove('k')<cr>
+nnoremap <silent> <C-l> :call TmuxMove('l')<cr>
+
 " Map the F5 key to run a Python script inside Vim.
 " I map F5 to a chain of commands here.
 " :w saves the file.
