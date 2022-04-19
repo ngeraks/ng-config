@@ -168,6 +168,11 @@ hi NonText ctermfg=black
 "fuzzyfind and wildcardmenu chooser
 set path+=**
 set wildmenu
+set wildmode=list:full
+set wildignore=*.swp,*.bak
+set wildignore+=*.pyc,*.class,*.sln,*.Master,*.csproj,*.csproj.user,*.cache,*.dll,*.pdb,*.min.*
+set wildignore+=*/.git/**/*,*/.hg/**/*,*/.svn/**/*
+set wildignore+=tags
 
 "filename bottom
 set laststatus=2
