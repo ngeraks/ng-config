@@ -1,9 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 thisdir=$(pwd)
-if [ -z "$1" ]; then 
-  git clone https://github.com/ngeraks/ng-config.git
+
+if [[ $thisdir != *ng-config* ]]; then 
+  if [ -z "$1" ]; then	
+    git clone https://github.com/ngeraks/ng-config.git
+  fi
+  cd ng-config
 fi
-cd ng-config
+	
 
 cprm(){
   cp -rf $1 $1_old
@@ -22,8 +26,6 @@ cprm ~/.tmux.conf
 #mv ~/.vim/* ~/.vim_old
 #mv ~/.tmux.conf ~/.tmux.conf_old
 
-#zsh
-#sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" #TODO Check if zsh ohmyzsh
 
 echo "Copy from config to home"
 ln -s $thisdir/ng-config/zshrc ~/.zshrc
