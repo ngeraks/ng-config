@@ -84,6 +84,9 @@ plugins=(
   #dotenv direnv zsh-autoenv
   extract
   git
+  gitfast
+  gh
+  globalias
   tmux
 )
 # dircycle rebind
