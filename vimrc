@@ -31,7 +31,7 @@ noremap <c-right> <c-w><
 " !clear runs the external clear screen command.
 " !python3 % executes the current file with Python.
 "nnoremap <f5> :w <CR>:!clear <CR>:!python3 % <CR>
-https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard
+
 
 " spaces instead of tabs
 set smartindent
@@ -168,6 +168,11 @@ hi NonText ctermfg=black
 "fuzzyfind and wildcardmenu chooser
 set path+=**
 set wildmenu
+set wildmode=list:full
+set wildignore=*.swp,*.bak
+set wildignore+=*.pyc,*.class,*.sln,*.Master,*.csproj,*.csproj.user,*.cache,*.dll,*.pdb,*.min.*
+set wildignore+=*/.git/**/*,*/.hg/**/*,*/.svn/**/*
+set wildignore+=tags
 
 "filename bottom
 set laststatus=2
