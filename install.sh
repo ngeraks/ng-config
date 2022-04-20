@@ -8,9 +8,11 @@ if [[ $thisdir != *ng-config* ]]; then
   cd ng-config
 fi
 
-mkdir -p tmux-plugins 
-cd tmux-plugins
-git clone https://github.com/tmux-plugins/tpm
+if [ ! -d tmux-plugins ]; then 
+  mkdir -p tmux-plugins 
+  cd tmux-plugins
+  git clone https://github.com/tmux-plugins/tpm
+fi
 cd ..
 
 cprm(){
