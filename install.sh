@@ -10,7 +10,9 @@ fi
 
 mkdir -p tmux-plugins 
 cd tmux-plugins
-git clone https://github.com/tmux-plugins/tpm
+if [ ! -d tmux-plugins/tpm ]; then 
+  git clone https://github.com/tmux-plugins/tpm
+fi
 cd ..
 
 cprm(){
