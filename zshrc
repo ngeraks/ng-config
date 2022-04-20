@@ -101,7 +101,7 @@ bindkey '^[J' dirhistory_zle_dirhistory_down
 #tmux
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOQUIT=false
-
+ZSH_TMUX_AUTOCONNECT=false
 
 source $ZSH/oh-my-zsh.sh
 
