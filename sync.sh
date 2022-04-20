@@ -2,7 +2,7 @@
 pull(){
   echo pull
   git pull
-  bash install.sh 1
+  bash install.sh 
 }
 
 push(){
