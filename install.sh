@@ -7,7 +7,12 @@ if [[ $thisdir != *ng-config* ]]; then
   fi
   cd ng-config
 fi
-	
+
+mkdir -p tmux-plugins 
+cd tmux-plugins
+git clone https://github.com/tmux-plugins/tpm
+cd ..
+ln -s tmux-plugins/ ~/.tmux-plugins
 
 cprm(){
   cp -rf $1 $1_old
