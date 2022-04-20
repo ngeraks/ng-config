@@ -75,10 +75,9 @@ plugins=(
   alias-finder
   bgnotify
   copypath
-  #colorize
+  colorize
   colored-man-pages
   direnv
-  #dircycle
   dirhistory
   dirpersist
   #dotenv direnv zsh-autoenv
@@ -96,20 +95,35 @@ plugins=(
   themes #lstheme, theme<theme_name>
   timer
   tmux
+  universalarchive #ua <format> <files>
+  vi-mode
 )
-# dircycle rebind
-#bindkey '^H' insert-cycledleft
-#bindkey '^L' insert-cycledright
+
 # dirhistory
-bindkey '^[H' dirhistory_zle_dirhistory_back
-bindkey '^[L' dirhistory_zle_dirhistory_future 
-bindkey '^[K' dirhistory_zle_dirhistory_up
-bindkey '^[J' dirhistory_zle_dirhistory_down
+bindkey '^[OD' dirhistory_zle_dirhistory_back
+bindkey '^[OC' dirhistory_zle_dirhistory_future 
+bindkey '^[OA' dirhistory_zle_dirhistory_up
+bindkey '^[OB' dirhistory_zle_dirhistory_down
+
+#timer
+TIMER_FORMAT=' %d '
+TIMER_PRECISION=1
+TIMER_THRESHOLD=3
 
 #tmux
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOQUIT=false
 ZSH_TMUX_AUTOCONNECT=false
+
+#vi-mode
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+VI_MODE_SET_CURSOR=true
+MODE_INDICATOR="%F{white}+%f"
+INSERT_MODE_INDICATOR="%F{yellow}+%f"
+
+
+
+
 
 
 RPS1='$(kubectx_prompt_info)'
