@@ -78,7 +78,7 @@ plugins=(
   colorize
   colored-man-pages
   direnv
-  dirhistory
+#  dirhistory
   dirpersist
   #dotenv direnv zsh-autoenv
   extract
@@ -100,10 +100,10 @@ plugins=(
 )
 
 # dirhistory
-bindkey '^[OD' dirhistory_zle_dirhistory_back
-bindkey '^[OC' dirhistory_zle_dirhistory_future 
-bindkey '^[OA' dirhistory_zle_dirhistory_up
-bindkey '^[OB' dirhistory_zle_dirhistory_down
+#bindkey '^[OD' dirhistory_zle_dirhistory_back
+#bindkey '^[OC' dirhistory_zle_dirhistory_future 
+#bindkey '^[OA' dirhistory_zle_dirhistory_up
+#bindkey '^[OB' dirhistory_zle_dirhistory_down
 
 #timer
 TIMER_FORMAT=' %d '
