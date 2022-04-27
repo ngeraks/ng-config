@@ -74,7 +74,6 @@ set scrolloff=8
 hi TabLine ctermfg=darkgray ctermbg=NONE
 hi TabLineFill term=bold cterm=bold
 hi TabLineSel ctermfg=white cterm=bold
-
 " vert split border
 hi VertSplit cterm=NONE ctermfg=Black ctermbg=NONE
 set fillchars+=vert:\ "
@@ -95,7 +94,13 @@ hi StatusLineNC  cterm=bold ctermfg=darkgray ctermbg=NONE
 hi Search cterm=bold ctermfg=white ctermbg=darkgray
 hi Visual cterm=bold ctermbg=black
 
-" While searching though a file incrementally highlight matching characters as you type.
+
+hi Pmenu ctermfg=DarkGrey ctermbg=NONE
+" hi PmenuSbar ctermfg=NONE ctermbg=NONE
+hi PmenuSel cterm=bold ctermfg=White ctermbg=NONE
+" hi PmenuThumb ctermfg=NONE ctermbg=NONE
+
+"
 set incsearch
 
 " Ignore capital letters during search.

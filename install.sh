@@ -37,12 +37,17 @@ cprm ~/.tmux-plugins
 echo "Copy from config to home"
 ln -s $thisdir/zshrc ~/.zshrc
 #cp $thisdir/bashrc ~/.bashrc
+
 ln -s $thisdir/vimrc ~/.vimrc
 mkdir -p ~/.vim/after/syntax
 ln -s $thisdir/cpp.vim ~/.vim/after/syntax/cpp.vim
 ln -s $thisdir/c.vim ~/.vim/after/syntax/c.vim
+
 mkdir -p ~/.config/nvim/
 ln -s $thisdir/init.vim ~/.config/nvim/init.vim
+mkdir -p ~/.config/nvim/lua
+ln -s $thisdir/plugins.lua ~/.config/nvim/lua/plugins.lua
+
 ln -s $thisdir/tmux.conf ~/.tmux.conf
 ln -s $thisdir/tmux-plugins/ ~/.tmux-plugins
 
